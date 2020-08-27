@@ -110,7 +110,7 @@ public class WarmUp1Test {
         result = warmUp1.mixStart("piz snacks");
         assertThat(result, is(false));
         result = warmUp1.mixStart("mmix snacks");
-        assertThat(result, is(true));
+        assertThat(result, is(false));
         result = warmUp1.mixStart("9ix snacks");
         assertThat(result, is(true));
         result = warmUp1.mixStart("9mix snacks");
