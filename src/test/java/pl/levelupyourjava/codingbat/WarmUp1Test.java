@@ -85,7 +85,6 @@ public class WarmUp1Test {
     assertThat(result, is(true));
     result = warmUp1.startHi("hello hi");
     assertThat(result, is(false));
-
     }
 
     @Test
