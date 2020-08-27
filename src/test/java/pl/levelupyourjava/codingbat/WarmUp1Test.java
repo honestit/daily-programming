@@ -119,6 +119,14 @@ public class WarmUp1Test {
 
     @Test
     public void close10() {
+        int result = warmUp1.close10(8, 13);
+        assertThat(result, is(8));
+        result = warmUp1.close10(13, 8);
+        assertThat(result, is(8));
+        result = warmUp1.close10(13, 7);
+        assertThat(result, is(0));
+        result = warmUp1.close10(13, 13);
+        assertThat(result, is(0));
     }
 
     @Test
