@@ -29,6 +29,16 @@ public class WarmUp1Test {
 
     @Test
     public void diff21() {
+        int result = warmUp1.diff21(19);
+        assertThat(result, is(2));
+        result = warmUp1.diff21(10);
+        assertThat(result, is(11));
+        result = warmUp1.diff21(21);
+        assertThat(result, is(0));
+        result = warmUp1.diff21(22);
+        assertThat(result, is(2));
+        result = warmUp1.diff21(-10);
+        assertThat(result,is(31));
     }
 
     @Test
