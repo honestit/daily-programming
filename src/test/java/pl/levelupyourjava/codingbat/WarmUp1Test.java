@@ -69,6 +69,12 @@ public class WarmUp1Test {
 
     @Test
     public void backAround() {
+        String result = warmUp1.backAround("cat");
+        assertThat(result, is("tcatt"));
+        result = warmUp1.backAround("Hello");
+        assertThat(result, is("oHelloo"));
+        result = warmUp1.backAround("a");
+        assertThat(result, is("aaa"));
     }
 
     @Test
