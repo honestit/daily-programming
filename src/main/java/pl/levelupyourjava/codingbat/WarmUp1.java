@@ -58,7 +58,12 @@ public class WarmUp1 {
      * missingChar("kitten", 4) → "kittn"
      */
     public String missingChar(String str, int n) {
-        return "";
+        String subString = str;
+
+        if(n >= 0 && n < str.length() ) {
+            subString =  str.replace(str.charAt(n) + "", "");
+        }
+        return subString;
     }
 
     /**
