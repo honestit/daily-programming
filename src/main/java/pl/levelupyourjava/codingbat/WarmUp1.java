@@ -123,7 +123,14 @@ public class WarmUp1 {
      * close10(13, 7) → 0
      */
     public int close10(int a, int b) {
-        return 0;
+
+        if(Math.abs(Math.abs(a) - 10) < Math.abs(Math.abs(b) - 10)) {
+            return a;
+        } else if (Math.abs(Math.abs(a) - 10) == Math.abs(Math.abs(b) - 10)) {
+            return 0;
+        } else {
+            return b;
+        }
     }
 
     /**

@@ -127,6 +127,12 @@ public class WarmUp1Test {
         assertThat(result, is(0));
         result = warmUp1.close10(13, 13);
         assertThat(result, is(0));
+        result = warmUp1.close10(-13, 13);
+        assertThat(result, is(0));
+        result = warmUp1.close10(-14, 13);
+        assertThat(result, is(13));
+        result = warmUp1.close10(-13, -23);
+        assertThat(result, is(-13));
     }
 
     @Test
