@@ -89,6 +89,16 @@ public class WarmUp1Test {
 
     @Test
     public void hasTeen() {
+        boolean result = warmUp1.hasTeen(13, 20, 10);
+        assertThat(result, is(true));
+        result = warmUp1.hasTeen(20, 19, 10);
+        assertThat(result, is(true));
+        result = warmUp1.hasTeen(20, 10, 13);
+        assertThat(result, is(true));
+        result = warmUp1.hasTeen(20, 20, 20);
+        assertThat(result, is(false));
+        result = warmUp1.hasTeen(12, 12, 12);
+        assertThat(result, is(false));
     }
 
     @Test
