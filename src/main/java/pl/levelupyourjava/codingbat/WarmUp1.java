@@ -45,7 +45,8 @@ public class WarmUp1 {
      * nearHundred(89) → false
      */
     public boolean nearHundred(int n) {
-        return false;
+        return n >= 90 && n < 110 ||
+                n >= 190 && n < 210;
     }
 
     /**

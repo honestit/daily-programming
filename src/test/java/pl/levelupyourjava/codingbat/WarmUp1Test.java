@@ -43,6 +43,18 @@ public class WarmUp1Test {
 
     @Test
     public void nearHundred() {
+        boolean result = warmUp1.nearHundred(93);
+        assertThat(result, is(true));
+        result = warmUp1.nearHundred(90);
+        assertThat(result,is(true));
+        result = warmUp1.nearHundred(89);
+        assertThat(result,is(false));
+        result = warmUp1.nearHundred(190);
+        assertThat(result,is(true));
+        result = warmUp1.nearHundred(210);
+        assertThat(result,is(false));
+
+
     }
 
     @Test
