@@ -59,6 +59,12 @@ public class WarmUp1Test {
 
     @Test
     public void missingChar() {
+        String result = warmUp1.missingChar("kitten", 1);
+        assertThat(result, is("ktten"));
+        result = warmUp1.missingChar("kitten", 0);
+        assertThat(result, is("itten"));
+        result = warmUp1.missingChar("kitten", 4);
+        assertThat(result, is("kittn"));
     }
 
     @Test
