@@ -12,10 +12,11 @@ public class WarmUp1 {
      */
     public boolean sleepIn(boolean weekday, boolean vacation) {
 
-        if()
-
-
-        return false;
+        if(weekday && !vacation) {
+            return false;
+        } else if (!weekday && vacation) {
+            return true;
+        } else return !weekday;
     }
 
     /**
