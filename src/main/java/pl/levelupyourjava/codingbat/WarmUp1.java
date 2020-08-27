@@ -75,7 +75,8 @@ public class WarmUp1 {
      * backAround("a") → "aaa"
      */
     public String backAround(String str) {
-        return "";
+        char lastChar = str.charAt(str.length() - 1);
+        return lastChar + str + lastChar;
     }
 
     /**
